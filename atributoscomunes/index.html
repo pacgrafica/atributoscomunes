@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <title>Atributos Comunes</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4 caja1">
+            <h1>SOY DATA SET</h1>
+            <div id="compartir">
+                <a href="https://www.pacgrafica.com"
+           data-share="43" target="_blank">Pac Gráfica</a>
+                <a href="https://pacgrafica.com/educacionsena/html5"
+           data-share="66" target="_blank">Iniciación Html5</a>
+                <a href="https://pacgrafica.com/talentic/"
+           data-share="38" target="_blank">Talentic</a>
+            </div>
+        </div>
+        <div class="col-md-4 caja2">
+            <div style="display: flex; justify-content:center; align-items:center">
+                <img src="images/jlopezLogo.png" alt="imagen" title="¡Este es el Logo de Juan Francisco López fullstackdesigner!">
+            </div>
+        </div>
+        <div class="col-md-4 caja3">
+            <h1>SOY DATA SET</h1>
+        </div>
+
+    </div>
+    
+    <script>
+        var links = document.querySelectorAll("#compartir a");
+
+        links[0].dataset.share; // 43
+        links[1].dataset.share; // 66
+        links[2].dataset.share; // 38
+    </script>
+</body>
+</html>
