@@ -28,3 +28,11 @@ a:hover {
     background-color: lightgreen;
     height: 20rem;
 }
+
+#menu {
+    padding: 2rem;
+}
+
+input {
+    height: 50px;
+}
